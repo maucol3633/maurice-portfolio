@@ -1,0 +1,243 @@
+.graphic-design {
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.graphic-header {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.graphic-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #f97316;
+}
+
+.graphic-header p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+/* ===========================
+   Partnerships
+=========================== */
+
+.clients-section {
+  margin-bottom: 80px;
+}
+
+.clients-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #f97316
+}
+
+.clients-intro {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.client-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  font-weight: 600;
+  transition: .3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
+  box-shadow: 0 15px 35px rgba(59,130,246,.25);
+}
+
+/* ===========================
+   Albums
+=========================== */
+
+.album-section {
+  margin-top: 80px;
+}
+
+.album-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #60a5fa;
+}
+
+.album-section p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   Gallery
+=========================== */
+
+.design-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+
+.design-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.gallery-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.35);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: .3s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-card h3 {
+  padding: 15px 20px 10px;
+  color: white;
+}
+
+.gallery-card p {
+  padding: 0 20px 20px;
+  color: #cbd5e1;
+}
+
+/* ===========================
+   Lightbox
+=========================== */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 40px;
+}
+
+.lightbox-content {
+  background: #1e293b;
+  border-radius: 15px;
+  max-width: 1100px;
+  width: 90%;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.lightbox-content img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.lightbox-content h2 {
+  margin-top: 20px;
+  color: white;
+}
+
+.lightbox-content p {
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f97316;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+
+  .graphic-design {
+    padding: 80px 30px;
+  }
+
+  .graphic-header h1 {
+    font-size: 2.8rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .graphic-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .design-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

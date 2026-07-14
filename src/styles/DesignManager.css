@@ -1,0 +1,231 @@
+/* ==========================
+   Manage Designs Dashboard
+========================== */
+
+.design-manager {
+  min-height: 100vh;
+  padding: 120px 8% 60px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #fff;
+}
+
+.design-manager h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #f97316
+}
+
+.design-manager p {
+  text-align: center;
+  color: #cbd5e1;
+}
+
+/* ==========================
+   Upload Card
+========================== */
+
+.upload-box,
+.edit-box {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffff;
+  color: #1e293b;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,.18);
+}
+
+.upload-box h2,
+.edit-box h2 {
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.upload-box input,
+.upload-box textarea,
+.upload-box select,
+.edit-box input,
+.edit-box textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: .25s;
+  box-sizing: border-box;
+}
+
+.upload-box input:focus,
+.upload-box textarea:focus,
+.upload-box select:focus,
+.edit-box input:focus,
+.edit-box textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,.15);
+}
+
+.upload-box textarea,
+.edit-box textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.upload-box input[type=file] {
+  border: none;
+  padding: 0;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.upload-box button,
+.edit-box button,
+.design-card button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.upload-box button,
+.edit-box button:first-of-type {
+  background: #2563eb;
+  color: white;
+}
+
+.upload-box button:hover,
+.edit-box button:first-of-type:hover {
+  background: #1d4ed8;
+}
+
+.edit-box button:last-of-type {
+  background: #64748b;
+  color: white;
+}
+
+.edit-box button:last-of-type:hover {
+  background: #475569;
+}
+
+/* ==========================
+   Gallery
+========================== */
+
+.design-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.design-card {
+  background: white;
+  color: #1e293b;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+  transition: .3s;
+}
+
+.design-card:hover {
+  transform: translateY(-8px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.design-card h3 {
+  padding: 20px 20px 10px;
+  font-size: 1.3rem;
+}
+
+.design-card p {
+  padding: 0 20px 20px;
+  text-align: left;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.design-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+}
+
+.design-card-buttons button {
+  flex: 1;
+}
+
+.design-card-buttons button:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+.design-card-buttons button:first-child:hover {
+  background: #1d4ed8;
+}
+
+.design-card-buttons button:last-child {
+  background: #dc2626;
+  color: white;
+}
+
+.design-card-buttons button:last-child:hover {
+  background: #b91c1c;
+}
+
+/* ==========================
+   Status Message
+========================== */
+
+.message {
+  margin-top: 20px;
+  text-align: center;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 900px) {
+  .design-manager {
+    padding: 100px 25px 50px;
+  }
+
+  .design-manager h1 {
+    font-size: 2.4rem;
+  }
+
+  .upload-box,
+  .edit-box {
+    padding: 25px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .design-manager h1 {
+    font-size: 2rem;
+  }
+
+  .design-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .design-card-buttons {
+    flex-direction: column;
+  }
+}

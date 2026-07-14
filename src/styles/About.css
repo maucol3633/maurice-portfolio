@@ -1,0 +1,152 @@
+.about {
+ padding: 100px 10%;
+  background:
+  linear-gradient(135deg,#fefefe,#1e3a8a);
+  color:white;
+}
+
+
+.about-grid {
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:25px;
+}
+
+/* Profile */
+.profile-card {
+    grid-column:span 1;
+    background:white;
+    border-radius:30px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.profile-circle {
+    width:130px;
+    height:130px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        #f97316,
+        #fb923c
+    );
+
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:45px;
+
+    font-weight:800;
+}
+
+.profile-card h2 {
+    margin-top:25px;
+    color:#f87503;
+}
+
+.profile-card p {
+    color:#6b7280;
+}
+
+.profile-tags {
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.profile-tags span {
+    background:#fff7ed;
+    color:#f97316;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* Main About */
+.about-card {
+    grid-column:span 3;
+    background:#ff7300;
+    color:white;
+    padding:45px;
+    border-radius:30px;
+}
+
+.badge {
+    color:#fb923c;
+    font-weight:700;
+}
+
+.about-card h1 {
+    font-size:48px;
+    line-height:1.2;
+}
+
+.about-card p {
+    color:#ffffff;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* Stats */
+.stat-card {
+    background:rgb(79, 79, 79);
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.stat-card:hover {
+    transform:translateY(-8px);
+}
+
+.stat-card h2 {
+    color:#f97316;
+    font-size:40px;
+}
+
+/* Skills */
+.skills-card {
+    grid-column:span 4;
+    background:rgb(79, 79, 79);
+    padding:35px;
+    border-radius:30px;
+}
+
+.skills-list {
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.skills-list span {
+    background:#f3f4f6;
+    padding:14px 22px;
+    border-radius:25px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.profile-card,
+.about-card,
+.skills-card{
+grid-column:span 1;
+}
+
+.about-card h1{
+font-size:34px;
+
+}
+
+}

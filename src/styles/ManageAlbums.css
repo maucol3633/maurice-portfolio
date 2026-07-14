@@ -1,0 +1,84 @@
+.manage-albums{
+min-height: 100vh;
+  padding: 120px 8% 60px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #fff;
+}
+
+.manage-albums h1{
+font-size:3rem;
+margin-bottom:40px;
+  color: #f97316;
+
+}
+
+.manage-albums h2{
+font-size:2rem;
+margin-bottom:40px;
+  color: #f97316;
+
+}
+
+.album-form{
+background:rgba(255, 255, 255, 0.696);
+padding:30px;
+border-radius:20px;
+max-width:600px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.album-form input,
+.album-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+.album-form textarea{
+height:120px;
+}
+
+.album-form button{
+background:#2563eb;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.album-list{
+margin-top:50px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.album-card{
+background:rgba(255, 255, 255, 0.477);
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.album-card button{
+margin-right:10px;
+padding:10px 15px;
+border-radius:8px;
+border:none;
+cursor:pointer;
+}
+
+@media(max-width:900px){
+.album-list{
+grid-template-columns:1fr 1fr;
+}
+}
+
+@media(max-width:600px){
+.album-list{
+grid-template-columns:1fr;
+}
+}

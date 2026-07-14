@@ -1,0 +1,109 @@
+.navbar {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 10%;
+  background:#111827;
+  color:white;
+}
+
+/* Brand */
+.brand {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  text-decoration:none;
+  color:white;
+}
+
+.brand-icon {
+  width:55px;
+  height:55px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#f97316;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.brand h2 {
+  margin:0;
+  font-size:20px;
+  color:#d1d5db;
+}
+
+.brand p {
+  margin:0;
+  font-size:14px;
+  color:#d1d5db;
+}
+
+/* Navigation */
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.nav-links a {
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+  transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color:#f97316;
+}
+
+/* Button */
+.hire-btn {
+  padding:12px 25px;
+  border-radius:50px;
+  background:#f97316;
+  color:white;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.hire-btn:hover {
+  background:#ea580c;
+  transform:translateY(-3px);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .navbar {
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+  }
+
+  .brand {
+    justify-content:center;
+  }
+
+  .nav-links {
+    width:100%;
+    display:flex;
+    flex-direction:row;   /* keeps links horizontal */
+    justify-content:center;
+    flex-wrap:wrap;       /* allows them to move to another line if needed */
+    gap:15px;
+  }
+
+  .nav-links a {
+    width:auto;
+    padding:8px;
+    text-align:center;
+  }
+
+  .hire-btn {
+    width:auto;
+    max-width:none;
+  }
+}
