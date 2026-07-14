@@ -27,11 +27,11 @@ function Hero() {
         <div className="hero-buttons">
 
           <a href="/projects" className="btn-primary">
-            View My Work
+            Web Projects
           </a>
 
-          <a href="/resume" className="btn-secondary">
-            Download Résumé
+          <a href="/design" className="btn-secondary">
+            Graphic Designs
           </a>
 
         </div>

@@ -47,7 +47,7 @@ const designAlbums = [
         id: 6,
         title: "Brand Identity 3",
         description: "Corporate identity",
-        image: "/images/designs/Brand Identity Design/brand3.PNG"
+        image: "/images/designs/Brand Identity Design/brand3.png"
       }
     ]
   },
