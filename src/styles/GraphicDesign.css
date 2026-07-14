@@ -5,6 +5,7 @@
   color: #fff;
 }
 
+
 /* ===========================
    Header
 =========================== */
@@ -27,109 +28,70 @@
   line-height: 1.8;
 }
 
-/* ===========================
-   Partnerships
-=========================== */
-
-.clients-section {
-  margin-bottom: 80px;
-}
-
-.clients-section h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: #f97316
-}
-
-.clients-intro {
-  max-width: 850px;
-  margin: auto;
-  text-align: center;
-  color: #94a3b8;
-  line-height: 1.8;
-  margin-bottom: 40px;
-}
-
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-.client-card {
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 15px;
-  padding: 30px;
-  text-align: center;
-  font-weight: 600;
-  transition: .3s ease;
-}
-
-.client-card:hover {
-  transform: translateY(-8px);
-  border-color: #3b82f6;
-  box-shadow: 0 15px 35px rgba(59,130,246,.25);
-}
 
 /* ===========================
-   Albums
+   Album Sections
 =========================== */
 
 .album-section {
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
+
 
 .album-section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
   color: #60a5fa;
+  margin-bottom: 10px;
 }
 
+
 .album-section p {
-  color: #94a3b8;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+
+/* Divider line */
+
+.album-line {
+  height: 2px;
+  width: 100%;
+  background: #475569;
   margin-bottom: 30px;
 }
 
+
 /* ===========================
-   Gallery
+   Gallery Layout
 =========================== */
 
 .design-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 900px;
 }
 
-/* ===========================
-   Cards
-=========================== */
-
-
-.design-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    gap: 20px;
-}
 
 /* ===========================
-   Cards
+   Image Cards
 =========================== */
 
 .gallery-card {
   background: #1e293b;
   border: 1px solid #334155;
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   transition: .3s ease;
 }
 
+
 .gallery-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0,0,0,.35);
 }
+
 
 .gallery-card img {
   width: 100%;
@@ -139,19 +101,11 @@
   transition: .3s ease;
 }
 
+
 .gallery-card:hover img {
   transform: scale(1.05);
 }
 
-.gallery-card h3 {
-  padding: 15px 20px 10px;
-  color: white;
-}
-
-.gallery-card p {
-  padding: 0 20px 20px;
-  color: #cbd5e1;
-}
 
 /* ===========================
    Lightbox
@@ -168,6 +122,7 @@
   padding: 40px;
 }
 
+
 .lightbox-content {
   background: #1e293b;
   border-radius: 15px;
@@ -178,6 +133,7 @@
   position: relative;
 }
 
+
 .lightbox-content img {
   width: 100%;
   max-height: 80vh;
@@ -185,15 +141,17 @@
   border-radius: 10px;
 }
 
+
 .lightbox-content h2 {
-  margin-top: 20px;
   color: white;
+  margin-top: 20px;
 }
+
 
 .lightbox-content p {
   color: #cbd5e1;
-  margin-top: 10px;
 }
+
 
 .close-btn {
   position: absolute;
@@ -206,12 +164,14 @@
   cursor: pointer;
 }
 
+
 .close-btn:hover {
   color: #f97316;
 }
 
+
 /* ===========================
-   Responsive
+   Tablet
 =========================== */
 
 @media (max-width: 992px) {
@@ -220,24 +180,48 @@
     padding: 80px 30px;
   }
 
+
   .graphic-header h1 {
     font-size: 2.8rem;
   }
 
+
+  .design-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
+
+/* ===========================
+   Mobile
+=========================== */
+
 @media (max-width: 768px) {
+
+  .graphic-design {
+    padding: 60px 20px;
+  }
+
 
   .graphic-header h1 {
     font-size: 2.3rem;
   }
 
-  .design-gallery {
-    grid-template-columns: 1fr;
+
+  .album-section h2 {
+    font-size: 1.7rem;
   }
 
-  .clients-grid {
+
+  .design-gallery {
     grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+
+  .gallery-card img {
+    height: 220px;
   }
 
 }
