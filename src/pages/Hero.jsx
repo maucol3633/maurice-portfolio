@@ -16,13 +16,18 @@ function Hero() {
           Full-Stack Developer • UI/UX Designer • Graphic Designer
         </h2>
 
-        <p>
-          I design and develop modern web applications that blend clean code,
-          intuitive user experiences, and creative visual design. From
-          responsive front-end interfaces to powerful back-end solutions,
-          I create digital products that are fast, scalable, and built to
-          solve real-world problems.
-        </p>
+        <div className="portfolio-message">
+
+  <p>
+    In today’s hiring landscape, technology helps evaluate candidates, but automated screening cannot always capture creativity, problem-solving, and real-world skills.
+  </p>
+
+  <p>
+    I built this portfolio to go beyond a résumé and showcase what I can create through full-stack development, UI/UX design, graphic design, and hands-on projects.
+    A résumé summarizes experience. A portfolio proves capability.
+  </p>
+
+</div>
 
         <div className="hero-buttons">
 
