@@ -17,6 +17,19 @@ function GraphicDesign() {
         </p>
       </div>
 
+<div className="portfolio-link">
+  <button
+    className="portfolio-btn"
+    onClick={() =>
+      window.open(
+        "https://drive.google.com/drive/folders/1T0kte57608sls8nhKdUdjH-x-C1RQcRf?usp=sharing",
+        "_blank"
+      )
+    }
+  >
+    Full Graphic Design Portfolio
+  </button>
+</div>
 
       {designAlbums.map((album) => (
 
